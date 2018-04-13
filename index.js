@@ -24,7 +24,7 @@ function distanceTravelledInFeet(startingBlock, endingBlock) {
 
 function calculatesFarePrice(startingBlock, endingBlock) {
 	const distance = distanceTravelledInFeet(startingBlock, endingBlock)
-  const actual = distanceTravelledInFeet - 400
+  const actual = distance - 400
 	if (distance <= 400) {
 		return 0}
 	else if (distance > 400 && distance <= 2000) {
